@@ -1,0 +1,5 @@
+<% @barbecues.each do |barbeue| %>
+	<ul>
+		<li><%= link_to(barbeue.name , barbecue_path(barbeue)) %></li>
+	</ul>
+<%end%>

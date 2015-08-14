@@ -1,0 +1,14 @@
+<h4>Add a new Barbecue</h4>
+
+<%= form_for @barbecue  do |f|%>
+<%= f.label :name %>
+<%= f.text_field :name %>
+
+<%= f.label :when %>
+<%= f.datetime_field :when %>
+
+<%= f.label :location %>
+<%= f.textarea_field :location %>
+
+<%= f.submit "Save" %>
+<%end%>
